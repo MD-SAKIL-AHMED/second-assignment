@@ -1,5 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.logo{
+    font-size: 24px;
+    cursor: pointer;
+    color:black;
+    
+    
+}
+.navber{
+    width: 85%;
+    height: auto;
+    padding: 25px 25px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    
+
+}
+
+.navber ul li{
+    display: inline;
+    list-style-type: none;
+    margin-left: 30px;
+   
+
+
+}
+.navber ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    
+}
+.header-icon{
+    display: flex;
+    
+}
+.header-icon .fas{
+    font-size: 25px;
+    margin-right: 25px;
+}
+/*------------------------ first-section----------------- */
+.first-parent{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.first-text{
+    width: 582px;
+    height: 270px;
+   
+}
+.first-text h1{
+    font-size: 40px;
+}
+.first-text p{
+    font-size: 14px;
+   
+    margin-bottom: 25px;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 196px;
+    height: 44px;
+    background: #E02C6D;
+    border-radius: 41px;
+    
+}
+.btn-text{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+ 
+}
+.fa-arrow-right{
+    color:white;
+    font-size: 15px;
+}
+.main-camera{
+   
+    border-radius: 50%;
+    border: 1px solid #AAAAAA;
+    transition: 3s;
+    transition-duration: 5s;
+   
+}
+.main-camera:hover{
+    
+    transform: rotate(360deg);
+}
+.main-camera img{
+    width: 440px;
+    height: 414px; 
+}
+.brand-icons{
+    display: flex;
+    width: 1110px;
+    height: 110px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+/* -----------------------------second-section-------------------- */
+.section-heading{
+   margin: 50px 0 30px 400px;
+
+}
+.all-collection-section{
+    width: 1047px;
+    height: 1662px;
+    margin: 0 auto;
+}
+.all-collection{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 25px;
+    row-gap: 20px;
+}
+.item{
+    width: 329px;
+    height: 476px;
+    padding:20px;
+    box-shadow: 10px 10px 40px gray;
+    border-radius: 5px;
+}
+.item-price{
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.87);
+}
+.item-info{
+    display: flex;
+    align-items: center;
+    
+}
+.item-rate{
+    color: #5E6366;
+    font-size: 14px;
+    margin-left: 12px;
+    margin-top: 5px;
+}
+.fa-star.filled{
+    color: #FB8200;
+    
+}
+.fa-star.empty{
+    color: gray;
+}
+.fas{
+    font-size: 12px;
+}
+.more-icon{
+    color: #E02C6D;
+    margin-left: 10px;
+    font-size: 20px;
+}
+.more-info{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    font-size: 20px;
+    color:#E02C6D;
+    cursor: pointer;
+}
+/* ----------------------third-section----------------- */
+.third-section{
+     margin-bottom: 50px;
+ }
+.second-parent{
+    display: flex;
+    width:30%;
+    margin-left: 10%;  
+ }
+.three-illustrators{
+    width: 250px;
+    margin-left: 70px; 
+ }
+.second-text h1,p{
+    text-align: center;
+ }
+.adjust-btn{
+    text-decoration: none;
+    background-color: #E02C6D;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 15px;
+    margin-left: 600px;
+}
+.footer{
+    background-color: rgb(34, 33, 33);
+    color: white;
+    text-align: center;
+    height: 200px;
+    
+
+}
+.footer-heading{
+    font-size: 24px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    
+}
+.copy-right{
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    color: #D9DBE1;
+    
+}
+.footer h4{
+    color: #D9DBE1;
+    font-size: 14px;
+}
+.social-media{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+.fab{
+    font-size:20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+/* -------------------responsive -----------*/
+/*---------------- mobile design------------ */
+@media only screen and (max-width:668px) {   
+    body{
+        width: 100%;
+        overflow-x: hidden;
+        
+    }
+    .navber{
+        margin-left: 60px;
+    
+    }
+    .navber .logo{
+      
+      font-size: 20px;
+    }
+    .first-parent{
+        display: block;
+        
+    }
+    .first-text{
+        width: 100%;
+        margin-bottom: 20px; 
+        padding: 10px;
+    }
+    .all-collection{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-left:60px;
+    }
+    .section-heading{
+        margin-left: 140px;
+    }
+    .item{
+        margin-right:40px ;
+    }
+    
+    
+    .footer{
+        margin-top: 2900px;
+    }
+    .navber ul,.fa-search,.brand-icons,.third-section{
+        display: none;
+    }
+   
 }
